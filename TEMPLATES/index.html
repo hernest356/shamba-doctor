@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamba Doctor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌱 Shamba Doctor</h1>
+            <p>Your Digital Farm Assistant</p>
+        </header>
+
+        <div id="chat-box" class="chat-box">
+
+            <div class="message bot">
+                <strong>🤖 Shamba Doctor:</strong>
+                <p>Hello farmer! 👋</p>
+                <p>How can I help you today?</p>
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Type your farming question..."
+            >
+
+            <button onclick="sendMessage()">SEND</button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
